@@ -1,4 +1,4 @@
-public class Personagem {
+public abstract class Personagem {
     private String nome;
     private int nivel;
     private int forca;
@@ -44,9 +44,7 @@ public class Personagem {
     }
 
    
-    public int atacar(){
-        return 0;
-    };
+    public abstract int atacar();
     public void receberDano(int dano){
         int novoHP=getHP()-dano;
         setHP(novoHP);
